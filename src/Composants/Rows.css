@@ -1,0 +1,70 @@
+.container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding:20px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    position: relative;
+    color:white;
+    margin-left: 30px;
+}
+.row h3
+{
+    color:white;
+}
+.Rowpostersmall
+{
+    
+    width: 250px;
+    margin-right: 5px;
+    border-radius: 0.5rem;
+    transition: transform 450ms;
+
+}
+.Rowposter
+{
+    
+    width: 250px;
+    object-fit: contain;
+    max-height: 220px;
+    margin-right: 10px;
+    transition: transform 450ms;
+
+}
+.Rowpostersmall:hover
+{
+    transform: scale(1.06);
+    cursor: pointer;
+}
+.Rowposter:hover
+{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+.scroll-row:hover
+{
+    cursor: pointer;   
+    background-color: rgba(0, 0, 0, 1);
+}
+.scroll-row
+{
+    font-size: 5rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 83%;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: rgba(50,50,50,0.8);
+}
